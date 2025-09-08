@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteHub Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🍴 TasteHub Restaurant</h1>
+    <p>Delicious meals, cozy vibes, and unforgettable dining.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#specials">Specials</a>
+    <a href="#reserve">Reservation</a>
+  </nav>
+
+  <!-- Part 1: Event Handling Demo -->
+  <section class="card">
+    <h2>👋 Welcome!</h2>
+    <p>Click the button to receive a warm greeting:</p>
+    <button id="welcomeBtn">Say Hello</button>
+    <p id="welcomeMessage" class="highlight"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="menu" class="card">
+    <h2>📖 Our Menu</h2>
+    <p>Click a dish to reveal more details:</p>
+    <ul>
+      <li class="menu-item">🍕 Margherita Pizza</li>
+      <li class="menu-item">🍝 Spaghetti Carbonara</li>
+      <li class="menu-item">🥗 Caesar Salad</li>
+    </ul>
+    <p id="dishInfo"></p>
+  </section>
+
+  <section id="specials" class="card">
+    <h2> Today’s Special</h2>
+    <p>Click to reveal our chef’s surprise dish:</p>
+    <button id="specialBtn">Show Special</button>
+    <p id="specialDish" class="highlight"></p>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="reserve" class="card">
+    <h2> Table Reservation</h2>
+    <p>Book your spot now. All fields required:</p>
+    <form id="reservationForm">
+      <label>
+        Name: 
+        <input type="text" id="resName" placeholder="John Doe">
+      </label><br><br>
+
+      <label>
+        Email: 
+        <input type="text" id="resEmail" placeholder="john@example.com">
+      </label><br><br>
+
+      <label>
+        Date: 
+        <input type="date" id="resDate">
+      </label><br><br>
+
+      <label>
+        Guests: 
+        <input type="number" id="resGuests" min="1" max="20" value="2">
+      </label><br><br>
+
+      <button type="submit">Reserve Table</button>
+    </form>
+    <p id="formMessage" class="highlight"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TasteHub Restaurant | Built with ❤️ and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
